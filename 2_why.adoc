@@ -1,0 +1,23 @@
+= Motivation
+
+NOTE: This is a general motivation for why BSV, and the words are mostly borrowed from Rishiyur's "BSV by Example".
+
+BSV is a cross-breed of _Haskell_, a purely functional programming model offering very high abstraction, advanced types and parameterization, and _System Verilog_, a well-known and accepted Hardware Description Language (HDL), for it's module structure and hierarchy.
+
+So far at my work place, I've seen people approach BSV from either side of the spectrums - the "functional software" side, or the "correct hardware" side.
+
+Somebody with good experience in Verilog will "think in Verilog" and write BSV, wheread someone with good experience in writing functional software, will "think in abstract terms".
+
+I have had the time and liberty to approach BSV from both ends of the spectrum, and I find that it's much easier to design good (and correct) hardware, when we take the "functional software" approach.
+
+Does it mean that it is bad to think about exactly what hardware, gates, muxes, flops, etc., you want to generate while writing BSV code?
+
+No. The whole point is that the Bluespec compiler borrows from decades of research, and generates hardware.
+
+More often than not for reasonably complex systems, the control logic can start to become extremely complex. Paired with poor communication in designers and users, and perhaps poorer documentation, this starts to look like a recipe for a disaster.
+
+As Rishiyur says in his beautiful work "BSV by Example", this is what makes RTL design so brittle.
+
+BSV offers you immunity upto a certain extent from race conditions, dropped data, mis-sampled data, buffer overflows and underflows and the like.
+
+I have personally found that, as long you communicate to the compiler everything that you thought, hardware generated is always correct by construction. This lets us keep our thoughts in the architecture plane, leaving the nitty gritty details in control logic for the compiler to figure out.

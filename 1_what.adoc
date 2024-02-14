@@ -1,0 +1,13 @@
+= BSV by Thought
+
+== What is BSV by Thought ?
+This work is, inspired by the beautiful works of William Strunk Jr. - "The Elements of Style", a manual for writing what I consider thoughtful BSV code.
+
+The reader will come across most of this if they spend enough time writing BSV, or fully go through Rishiyur's work - "BSV by Example", or by self experience.
+
+The primary reader of this work is intended to be my earlier self, when I was a complete beginner to BSV. Although, I still find myself to be pretty much a complete beginner.
+
+Someone who is just getting started with writing their first module in BSV might find this useful, but others very little.
+
+== Disclaimer
+That being said my employer, or any other instituitions that I am affiliated to, will not take any responsibility of anything that I write here whatsoever.
